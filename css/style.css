@@ -29,7 +29,7 @@
   src: url("../fonts/AGaramondPro-Regular.otf");
 }
 
-.container::after, .navbar__item__wrap::after {
+.container::after, .navbar__item__wrap::after, .write-us__form__container::after, .share-with-friends-container::after {
   content: '';
   overflow: hidden;
   display: table;
@@ -136,7 +136,7 @@
   background-image: url(../images/volna-yellow.png);
   background-repeat: repeat-x;
   position: absolute;
-  top: -14px;
+  top: -13px;
   left: 0;
   width: 100%;
   height: 15px;
@@ -151,6 +151,7 @@
 .list-of-menu__block {
   display: inline-block;
   text-align: center;
+  vertical-align: top;
 }
 
 .list-of-menu__item {
@@ -226,11 +227,11 @@
 
 .tab-menu {
   background-image: url(../images/bg-2.png);
-  height: 800px;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   position: relative;
+  padding: 7% 0;
 }
 
 .black-and-beef {
@@ -238,10 +239,6 @@
   margin: 0 auto;
   background-color: white;
   border-radius: 15px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
   padding: 60px;
 }
 
@@ -255,6 +252,29 @@
   margin: 0 auto;
   font-family: 'FuturaDemiC';
   font-size: 34px;
+  position: relative;
+}
+
+.black-and-beef__title__h2::before {
+  content: '';
+  background-image: url("../images/right-arrow.png");
+  position: absolute;
+  left: 140%;
+  top: 0;
+  width: 24%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.black-and-beef__title__h2::after {
+  content: '';
+  background-image: url("../images/left-arrow.png");
+  position: absolute;
+  right: 140%;
+  top: 0;
+  width: 24%;
+  height: 100%;
+  background-repeat: no-repeat;
 }
 
 .black-and-beef__image {
@@ -290,7 +310,6 @@
 
 .benefits__items__wrapp {
   text-align: center;
-  margin: 0px -87px;
 }
 
 .black-and-beef__right-col__text__weight::after {
@@ -335,7 +354,7 @@
   background-image: url("../images/volna-white.png");
   background-repeat: repeat-x;
   position: absolute;
-  top: -14px;
+  top: -13px;
   left: 0;
   width: 100%;
   height: 15px;
@@ -388,9 +407,9 @@
   font-family: FuturaDemiC;
   display: inline-block;
   vertical-align: top;
-  width: 208px;
+  margin: 0 3% 0 0;
+  width: 21%;
   text-align: center;
-  margin: 0 3%;
 }
 
 .benefit__item__wrapper {
@@ -419,4 +438,328 @@
   width: 118%;
   height: 111px;
   position: absolute;
+}
+
+.fred--offers___sprite {
+  background-image: url(../images/offers-sprite.png);
+  background-repeat: no-repeat;
+  display: block;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fred--offeers___sprite-ico-1 {
+  width: 61px;
+  height: 83px;
+  background-position: -5px -5px;
+}
+
+.fred--offeers___sprite-ico-2 {
+  width: 106px;
+  height: 73px;
+  background-position: -76px -5px;
+}
+
+.fred--offeers___sprite-ico-3 {
+  width: 89px;
+  height: 61px;
+  background-position: -192px -5px;
+}
+
+.fred--offeers___sprite-ico-4 {
+  width: 69px;
+  height: 92px;
+  background-position: -291px -5px;
+}
+
+.dinner-in-office {
+  background-image: url(../images/bg-4.png);
+  background-size: cover;
+  padding: 70px 0;
+}
+
+.dinner-in-office__text__h2 {
+  color: black;
+  font-family: FuturaDemiC;
+  font-size: 64px;
+  line-height: 55px;
+  margin-bottom: 42px;
+}
+
+.dinner-in-office__text__span {
+  font-family: PTSerifPro;
+  font-size: 21px;
+  font-weight: 700;
+  font-style: italic;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.dinner-in-office__text__p {
+  font-family: AGaramond;
+  font-size: 21px;
+}
+
+.dinner-in-office__photo {
+  float: right;
+  width: 50%;
+}
+
+.dinner-in-office__photo img {
+  width: 100%;
+}
+
+.dinner-in-office__text {
+  width: 47%;
+  float: left;
+}
+
+.companies__title {
+  font-family: FuturaDemiC;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.companies {
+  text-align: center;
+  padding: 75px 0;
+  position: relative;
+}
+
+.companies::after {
+  content: '';
+  background-image: url("../images/volna-white-backwards.png");
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 100%;
+  height: 19px;
+  z-index: 100;
+}
+
+.companies__logotype {
+  display: inline-block;
+  margin: 0 26.5px;
+  vertical-align: middle;
+}
+
+.mapa {
+  position: relative;
+}
+
+.mapa__title__h2 {
+  font-family: FuturaDemiC;
+  font-size: 60px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 5%;
+  color: white;
+}
+
+.mapa__src {
+  width: 100%;
+}
+
+.js-mapa-stop-scroll {
+  pointer-events: none;
+}
+
+.write-us {
+  background-color: #FFC340;
+  padding: 85px 0 75px 0;
+  position: relative;
+  background-image: url(../images/contacts-mask.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.write-us::before {
+  content: '';
+  background-image: url("../images/volna-yellow.png");
+  background-repeat: repeat-x;
+  position: absolute;
+  top: -13px;
+  left: 0;
+  width: 100%;
+  height: 19px;
+  z-index: 100;
+}
+
+.write-us__title {
+  color: white;
+  font-family: FuturaDemiC;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.write-us__left__form {
+  width: 50%;
+  float: left;
+  padding: 0 15px;
+}
+
+.write-us__right__form {
+  width: 50%;
+  float: right;
+  padding: 0 15px;
+}
+
+.write-us__input {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  padding: 11.5px;
+}
+
+.write-us__button {
+  border: none;
+}
+
+.write-us__input__textarea {
+  width: 100%;
+  height: 258px;
+  padding: 20px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.write-us__button__container {
+  text-align: center;
+}
+
+.write-us__button {
+  font-size: 23px;
+  padding: 15px 35px;
+  cursor: pointer;
+}
+
+.write-us__title {
+  text-align: center;
+  margin-bottom: 53px;
+  line-height: 47px;
+}
+
+.share-with-friends {
+  padding: 68px 0 0 0;
+  text-align: center;
+  position: relative;
+}
+
+.share-with-friends-left-col {
+  float: left;
+  width: 50%;
+}
+
+.share-with-friends-right-col {
+  width: 50%;
+  float: right;
+  text-align: left;
+}
+
+.share-with-friends-text1 {
+  font-size: 22px;
+  font-family: PTSerifPro;
+  font-style: italic;
+  display: block;
+  margin: 5% 0 7.5% 0;
+}
+
+.share-with-friends-text2 {
+  font-size: 60px;
+  font-family: FuturaDemiC;
+  line-height: 64px;
+}
+
+.share-with-friends-left-col img {
+  display: block;
+}
+
+.share-with-friends-text3 {
+  font-family: Garamond;
+  font-size: 21px;
+  line-height: 41px;
+  margin: 8.3% 0 9% 0;
+}
+
+.share-with-friends-container {
+  width: 1022px;
+  margin: 0 auto;
+}
+
+.share-with-friends::before {
+  content: '';
+  background-image: url("../images/volna-white.png");
+  background-repeat: repeat-x;
+  position: absolute;
+  top: -13px;
+  left: 0;
+  width: 100%;
+  height: 19px;
+  z-index: 100;
+}
+
+.footer {
+  background-color: #313131;
+  box-shadow: 0 0 14px rgba(194, 201, 206, 0.3);
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  background-image: url("../images/volna-grey.png");
+  background-repeat: repeat-x;
+  position: absolute;
+  top: -13px;
+  left: 0;
+  width: 100%;
+  height: 19px;
+  z-index: 100;
+}
+
+.footer-container {
+  padding: 0 15%;
+  line-height: 173px;
+}
+
+.footer-tel, .footer-mail {
+  font-family: FuturaFuturisC;
+  font-size: 25px;
+  color: white;
+}
+
+.footer-tel {
+  margin-right: 4%;
+}
+
+.footer-link {
+  display: inline-block;
+  background-image: url(../images/soc-buts.png);
+  width: 42px;
+  height: 35px;
+  margin-right: 26px;
+}
+
+.footer-link:last-of-type {
+  margin: 0;
+}
+
+.footer-soc-wrap {
+  display: inline-block;
+  float: right;
+}
+
+.footer-i {
+  background-position: -73px 0;
+}
+
+.footer-tw {
+  background-position: -151px -1px;
 }
