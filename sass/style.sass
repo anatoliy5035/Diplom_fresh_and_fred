@@ -1,4 +1,4 @@
-@import "media"
+
 @import "fonts"
 
 .container::after
@@ -37,8 +37,11 @@ $yellow: #FFC340
   float: left
   margin: 0 15px
 
+
 .navbar__item a
   color: white
+  &:hover
+    color: $yellow
 
 .header
   background-image: url("../images/bg-1.png")
@@ -49,11 +52,14 @@ $yellow: #FFC340
 .button
   padding: 7px 12px
   background-color: $green
+
   text-shadow: 0 1px 0 rgba(104, 56, 8, 0.52)
   border-radius: 5px
   color: white
   display: inline-block
   white-space: nowrap
+  &:hover
+    background-color: #33B515
 
 .navbar__enter
   font-size: 20px
@@ -124,6 +130,11 @@ $yellow: #FFC340
   padding: 43px
   text-align: center
   position: relative
+  transition: all .2s
+  cursor: pointer
+  &:hover
+    transform: scale(1.1)
+    box-shadow: 0 24px 51px rgba(139, 57, 3, 0.36)
 
 .list-of-menu__title
   text-align: center
@@ -199,6 +210,7 @@ $yellow: #FFC340
 .black-and-beef__title
   text-align: center
   margin-bottom: 50px
+  position: relative
 
 .black-and-beef__title__h2
   display: inline-block
@@ -207,25 +219,22 @@ $yellow: #FFC340
   font-size: 34px
   position: relative
 
-.black-and-beef__title__h2::before
-  content: ''
-  background-image: url("../images/right-arrow.png")
-  position: absolute
-  left: 140%
-  top: 0
-  width: 24%
-  height: 100%
-  background-repeat: no-repeat
-
-.black-and-beef__title__h2::after
-  content: ''
+.black-and-beef__left-arrow
+  width: 40px
+  height: 40px
   background-image: url("../images/left-arrow.png")
   position: absolute
-  right: 140%
+  right: 100%
   top: 0
-  width: 24%
-  height: 100%
-  background-repeat: no-repeat
+
+.black-and-beef__right-arrow
+  background-image: url("../images/right-arrow.png")
+  width: 40px
+  height: 40px
+  position: absolute
+  left: 100%
+  top: 0
+
 
 .black-and-beef__image
   max-width: 100%
@@ -472,11 +481,13 @@ $yellow: #FFC340
   transform: translate(-50%,0)
   top: 5%
   color: white
+  width: 100%
+  text-align: center
 
 .mapa__src
   width: 100%
 
-.js-mapa-stop-scroll
+.js-mapa-stop-scroll iframe
   pointer-events: none
 
 .write-us
@@ -557,7 +568,7 @@ $yellow: #FFC340
   
 .share-with-friends-left-col
   float: left
-  width: 50%
+  width: 46%
 
 .share-with-friends-right-col
   width: 50%
@@ -579,6 +590,7 @@ $yellow: #FFC340
 
 .share-with-friends-left-col img
   display: block
+  width: 100%
 
 .share-with-friends-text3
   font-family: Garamond
@@ -590,7 +602,7 @@ $yellow: #FFC340
   @extend %clearfix
 
 .share-with-friends-container
-  width: 1022px
+  max-width: 1022px
   margin: 0 auto
 
 .share-with-friends::before
@@ -621,8 +633,8 @@ $yellow: #FFC340
   z-index: 100
 
 .footer-container
-  padding: 0 15%
-  line-height: 173px
+  padding: 5% 15%
+
 
 .footer-tel, .footer-mail
   font-family: FuturaFuturisC
@@ -651,6 +663,52 @@ $yellow: #FFC340
 
 .footer-tw
   background-position: -151px -1px
+
+.navbar__item__wrap__mobi
+  width: 50px
+  float: right
+  margin-left: 5%
+
+.line-menu__mobi
+  width: 100%
+  height: 5px
+  background: $yellow
+  display: block
+  margin-bottom: 11px
+  transition: all .2s
+
+.line-menu__mobi:last-of-type
+  margin-bottom: 0
+
+.active .line-1
+  transform: translate(0, 16px) rotate(-45deg)
+
+.active .line-2
+  display: none
+
+.active .line-3
+  transform: translate(0, 1px) rotate(45deg)
+
+.mobi-menu__item
+  display: block
+  color: black
+  font-size: 29px
+  padding: 2% 0 2% 7%
+  &:hover
+    background: $yellow
+
+.mobi-menu
+  position: absolute
+  background: white
+  top: 85px
+  width: 100%
+  font-family: 'FuturaBookC'
+  display: none
+
+.mobi-menu.active
+  display: block
+
+
 
   
   
