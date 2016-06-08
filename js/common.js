@@ -13,3 +13,14 @@ $(".js-toggle-class-menu").click(function(){
     $(".mobi-menu").toggleClass("active");
 })
 
+$(".js-list").click(
+    function() {
+        var clickedEl = ($(this).index());
+        $(".tab-arrow-bottom").removeClass("active");
+        $(".tab-arrow-bottom").eq(clickedEl).addClass("active");
+
+        $(".black-and-beef").removeClass("active");
+        $(".black-and-beef").eq(clickedEl).addClass("active");
+    }
+)
+

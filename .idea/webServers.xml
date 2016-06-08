@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f9c89e85-9ce9-4742-aa9c-40c714070457" name="decorandtextile" url="http://5.101.152.95">
+        <fileTransfer host="5.101.152.95" port="21" username="kztiss5t">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="2aa1919d-7cf0-4fca-a3de-eaec9c06264a" name="elistor" url="http://elistor.com.ua">
+        <fileTransfer host="elistor.com.ua" port="21" password="dfebdff9dfeedf9ddf9cdf9fdf8bdfc9dfdcdfc8dffbdffddfefdf8b" username="site_webmaster@elistor.com.ua">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

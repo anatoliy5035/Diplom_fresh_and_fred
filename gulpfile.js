@@ -26,13 +26,13 @@ gulp.task('server', function () {
 //html
 gulp.task('html', function () {
     gulp.src('./**/*.html')
-        //.pipe(connect.reload())
+        .pipe(connect.reload())
 });
 
 //css
 gulp.task('css', function () {
     gulp.src('./css/**/*.css')
-        //.pipe(connect.reload())
+        .pipe(connect.reload())
 });
 
 
@@ -63,11 +63,15 @@ gulp.task('minify-svg', function () {
 });
 
 
+
 gulp.task('sass', function () {
-    gulp.src('./sass/**/*.sass')
-        .pipe(sass({outputStyle: 'expanded'})
-        .on('error', gutil.log))
-        .pipe(gulp.dest('./css/'));
+    return gulp.src('./sass/**/*.scss')
+        .pipe(sass.sync().on('error', sass.logError))
+        .pipe(gulp.dest('./css'));
+});
+
+gulp.task('sass:watch', function () {
+    gulp.watch('./sass/**/*.scss', ['sass']);
 });
 
 
